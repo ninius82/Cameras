@@ -26,7 +26,7 @@ import it.serravalle.cameras_api.exception.CameraSavingException;
 All requests are received from the client and sent to the service for processing. 
 */
 @RestController
-@RequestMapping("/")
+@RequestMapping("/cameras")
 public class CameraController {
 
 	@Autowired

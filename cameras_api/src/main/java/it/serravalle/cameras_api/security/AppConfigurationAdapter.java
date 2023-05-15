@@ -23,8 +23,9 @@ public class AppConfigurationAdapter {
         	.headers().frameOptions().disable()
         	.and()
         	.authorizeHttpRequests()
-        	.requestMatchers("/private/**").hasRole("ADMIN")
-    		.requestMatchers("/**").hasRole("USER")
+        	.requestMatchers("/cameras/private/**").hasRole("ADMIN")
+    		.requestMatchers("/cameras/**").hasRole("USER")
+    		.requestMatchers("/**").permitAll()
     		.and()
             .httpBasic().authenticationEntryPoint(authenticationEntryPoint);
         return http.build();
