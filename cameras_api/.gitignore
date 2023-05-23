@@ -33,3 +33,4 @@ build/
 .vscode/
 /README.txt
 /h2db/
+/logs/
