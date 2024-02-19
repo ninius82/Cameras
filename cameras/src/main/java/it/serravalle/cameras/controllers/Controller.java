@@ -83,7 +83,7 @@ public class Controller {
 
 	}
 
-	InputStream getInputStreamFromFluxDataBuffer(Flux<DataBuffer> data) throws IOException {
+	private InputStream getInputStreamFromFluxDataBuffer(Flux<DataBuffer> data) throws IOException {
 	    PipedOutputStream osPipe = new PipedOutputStream();
 	    PipedInputStream isPipe = new PipedInputStream(osPipe);
 
